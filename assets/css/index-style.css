@@ -1,0 +1,112 @@
+:root {
+    --heightLarge: 0px;
+    --background-pred: #000;
+    --heightSmall: 0px;
+    --color-purple: #7952B3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-pred);
+    position: relative;
+}
+
+
+#navbarNav {
+    transition: height .5s ease-in-out !important;
+}
+
+.normal-size {
+    background: var(--background-pred);
+    transition: .5s ease-in-out;
+    transform: translate(0px, var(--heightLarge)); 
+}
+
+
+.minimal-size{
+    background: var(--background-pred);
+    transition: .5s ease-in-out;
+    transform: translate(0px, var(--heightSmall)); 
+}
+
+.tabla-datos-personales {
+    font-size: 12px;
+}
+
+.tabla-datos-personales th,td:not(first-child){
+    padding-bottom: .5em;
+}
+
+
+@media (max-width: 767px) {
+    .tabla-datos-personales th{
+        vertical-align: top;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        padding-top: 0 !important;
+    }
+    
+    main .container {
+        padding-top: 0 !important;
+    }
+
+    .texto-presentacion {
+        font-size: 13px;
+    }
+}
+
+.card-footer {
+    background: var(--color-purple);
+}
+
+.card-footer a, a:hover {
+    color: #FFF;
+    text-decoration: none !important;
+}
+
+#boton-descargar-cv {
+    border-color: #7952B3 !important;
+    color: #7952B3 !important;
+}
+
+#boton-descargar-cv:hover {
+    border: 1px solid #FFF !important;
+    background: #7952B3;
+    color: #FFF !important;
+    font-weight: bold;
+}
+
+.contenido-card {
+    font-size: 13px;
+}
+
+#experiencia {
+    background: var(--color-purple);
+}
+
+.link-ver-mas-experiencia {
+    color: #000;
+    text-decoration: none;
+}
+
+.link-ver-mas-experiencia:hover {
+    color: var(--color-purple);
+}
+
+.linea-tiempo hr {
+    color: var(--color-purple);
+    height: 3px;
+}
+
+.linea-tiempo .collapse {
+    border: 1px solid var(--color-purple);
+    border-radius: 6px;
+}

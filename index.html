@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK BOOTSTRAP 5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- LINK JS DE BOOTSTRAP 5.1.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- LINK FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/85592b4203.js" crossorigin="anonymous"></script>
+    <!-- LINK CSS PROPIO -->
+    <link href="assets/css/index-style.css" rel="stylesheet">
+    <link href="assets/css/hamburguer-style.css" rel="stylesheet">
+    <link href="assets/css/linea-tiempo-style.css" rel="stylesheet">
+    <!-- <link href="assets/css/new-linea-tiempo-style.css" rel="stylesheet"> -->
+    <title>Gerardo Moraga</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-principal" tabindex="0">
+    <!-- NAVBAR -->
+    <!-- CAMBIO MENÚ HAMBURGUESA AL TAMAÑO SM -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark bg-gradient fixed-top" id="navbar-principal">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- CAMBIO DE ICONO MENÚ HAMBURGUESA A DINAMICO -->
+            <button id="nav-hamburguer-button" class="navbar-toggler collapsed d-flex d-sm-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Acerca de Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Educación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="contenedor-pagina" class="normal-size">
+        <!-- CARD PARA MOSTRAR INFORMACIÓN PERSONAL -->
+        <main class="pt-5" id="inicio">
+            <div class="container pt-5 pb-5">
+                <!-- INICIO FILA -->
+                <div class="row">
+                    <div class="col-12 col-sm-12 d-flex justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <!-- IMAGEN PERSONAL -->
+                                <div class="col-6 col-sm-6 col-md-4 p-3">
+                                    <img src="assets/img/perfil-inicio.jpg" class="img-fluid rounded-start" alt="">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-8 pt-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title p-0 m-0">Gerardo Moraga</h5>
+                                        <p class="card-text p-0 m-0">Ingeniero en Informática</p>
+                                        <div class="w-80">
+                                            <hr>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <!-- TABLA CON DATOS PERSONALES -->
+                                            <table class="p-0 m-0 tabla-datos-personales">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Edad:</th>
+                                                        <td>28</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Dirección:&nbsp;</th>
+                                                        <td>San Pablo 1353, Departamento 1808, Santiago de Chile.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Correo:</th>
+                                                        <td>moraga.ga@gmail.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Telefono:</th>
+                                                        <td>+569 3029 4271</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FOOTER CARD -->
+                                <div class="card-footer p-0 m-0 py-2">
+                                    <div class="d-flex justify-content-center py-4 gap-4 text-light">
+                                        <a href="https://www.facebook.com/gerardo.moraga/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                                        <a href="https://www.instagram.com/moraga.ga/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                                        <a href="https://www.linkedin.com/in/gerardo-moraga-gajardo-081aa41b5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN FILA -->
+                <!-- INICIO FILA 2 -->
+                <div class="row pt-2">
+                    <div class="col-12 d-flex justify-content-center">
+                        <a class="btn" id="boton-descargar-cv">Descargar CV</a>
+                    </div>
+                </div>
+                <!-- FIN FILA 2-->
+                <!-- INICIO FILA 3 -->
+                <div class="row pt-4 d-flex justify-content-center">
+                    <div class="col-11 text-center">
+                        <p class="text-white texto-presentacion">Hola soy Gerardo Moraga un Ingeniero en Informática con 2 años de experiencia que actualmente se desempeña 
+                            en rubro relacionado a medios de pago, gestionando diversas soluciones, 
+                            adaptaciones y mejoras para procesos críticos de los clientes de la empresa. 
+                            Un entusiasta de la programación, me agradan los retos y aprender sobre temas nuevos, 
+                            con capacidad de trabajo colaborativo intentando aportar tanto en lo técnico como en lo 
+                            humano para verme inmerso en un mejor ambiente laboral para finalmente obtener siempre los 
+                            mejores resultados.</p>
+                    </div>
+                </div>
+                <!-- FIN FILA 3-->      
+            </div>
+        </main>
+        <!-- SECCIÓN DE EXPERIENCIA LABORAL -->
+        <section id="experiencia">
+            <div class="container">
+                <!-- INICIO FILA 1 -->
+                <!-- TRABAJO NÚMERO 1 -->
+                <div class="row py-5">
+                    <div class="col-12 text-center">
+                        <div class="text-start">
+                            <ul class="linea-tiempo">
+                                <!-- PUESTO 1-->
+                                <li>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Innovapay</h4>
+                                            <h5 class="card-title">Ingeniero de Software</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="fa-regular fa-calendar"></i> &nbsp;Mayo 2022 - A la fecha</h6>
+                                            <p class="card-text">Encargado de realizar mejoras y creación de nuevas 
+                                                aplicaciones, interaccion con clientes orientado al rubro financiero. 
+                                                <br><strong><a class="link link-ver-mas-experiencia" data-bs-toggle="collapse" href="#contenido-card-1" role="button" aria-expanded="false" aria-controls="contenido-card-1">Ver más</a></strong>
+                                            </p>
+                                            <div class="collapse" id="contenido-card-1">
+                                                <div class="card card-body contenido-card">
+                                                    <p class="p-0 m-0">Adaptación continua de aplicación conciliadora de transacciones entre instituciones financieras, gestionada a través de SSIS por los grandes volúmenes de datos procesados cada día.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Creación de aplicaciones en Python como apoyo a proceso de conciliación haciendo legible las interfaces al proceso de ETL, ya sea ordenando o extrayendo la data necesaria. Python 3.7.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas, para realización de QA, con la capacidad de procesar diversas interfaces y líneas semanales para no dejar registro de data sensible. Python 3.7 y SQLite.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas y se
+                                                        encuentra como intermediaria en proceso de conciliación para que este no funcione con
+                                                        información sensible, dando seguridad al proceso. Manteniendo así los datos ofuscados
+                                                        en otra base de datos con llaves criptográficas. Creada en C#, Net Framework 4.7, Azure
+                                                        Key Vault y Base de datos SQL Server 2019.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Utilización de Azure DevOps para gestión de versionamiento de aplicaciones y trabajo
+                                                        colaborativo con el equipo de desarrollo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- PUESTO 2-->
+                                <li>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Innovapay</h4>
+                                            <h5 class="card-title">Analista de Sistemas (Externo Banco Itaú)</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="fa-regular fa-calendar"></i> &nbsp;Octubre 2021 - Abril 2022</h6>
+                                            <p class="card-text">Encargado de crear y optimizar procesos de apoyo para los usuarios.
+                                                <br><strong><a class="link link-ver-mas-experiencia" data-bs-toggle="collapse" href="#contenido-card-2" role="button" aria-expanded="false" aria-controls="contenido-card-2">Ver más</a></strong>
+                                            </p>
+                                            <div class="collapse" id="contenido-card-2">
+                                                <div class="card card-body contenido-card">
+                                                    <p class="p-0 m-0">Adaptación continua de aplicación conciliadora de transacciones entre instituciones financieras, gestionada a través de SSIS por los grandes volúmenes de datos procesados cada día.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Creación de aplicaciones en Python como apoyo a proceso de conciliación haciendo legible las interfaces al proceso de ETL, ya sea ordenando o extrayendo la data necesaria. Python 3.7.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas, para realización de QA, con la capacidad de procesar diversas interfaces y líneas semanales para no dejar registro de data sensible. Python 3.7 y SQLite.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas y se
+                                                        encuentra como intermediaria en proceso de conciliación para que este no funcione con
+                                                        información sensible, dando seguridad al proceso. Manteniendo así los datos ofuscados
+                                                        en otra base de datos con llaves criptográficas. Creada en C#, Net Framework 4.7, Azure
+                                                        Key Vault y Base de datos SQL Server 2019.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Utilización de Azure DevOps para gestión de versionamiento de aplicaciones y trabajo
+                                                        colaborativo con el equipo de desarrollo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- PUESTO 3-->
+                                <li>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">PAD Systems</h4>
+                                            <h5 class="card-title">Analista de Sistemas (Externo Grupo MOK)</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="fa-regular fa-calendar"></i> &nbsp;Abril 2021 - Septiembre 2021</h6>
+                                            <p class="card-text">Encargado de crear, optimizar y realizar migraciones de sistemas.
+                                                <br><strong><a class="link link-ver-mas-experiencia" data-bs-toggle="collapse" href="#contenido-card-3" role="button" aria-expanded="false" aria-controls="contenido-card-1">Ver más</a></strong>
+                                            </p>
+                                            <div class="collapse" id="contenido-card-3">
+                                                <div class="card card-body contenido-card">
+                                                    <p class="p-0 m-0">Adaptación continua de aplicación conciliadora de transacciones entre instituciones financieras, gestionada a través de SSIS por los grandes volúmenes de datos procesados cada día.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Creación de aplicaciones en Python como apoyo a proceso de conciliación haciendo legible las interfaces al proceso de ETL, ya sea ordenando o extrayendo la data necesaria. Python 3.7.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas, para realización de QA, con la capacidad de procesar diversas interfaces y líneas semanales para no dejar registro de data sensible. Python 3.7 y SQLite.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas y se
+                                                        encuentra como intermediaria en proceso de conciliación para que este no funcione con
+                                                        información sensible, dando seguridad al proceso. Manteniendo así los datos ofuscados
+                                                        en otra base de datos con llaves criptográficas. Creada en C#, Net Framework 4.7, Azure
+                                                        Key Vault y Base de datos SQL Server 2019.</p>
+                                                    <hr>
+                                                    <p class="p-0 m-0">Utilización de Azure DevOps para gestión de versionamiento de aplicaciones y trabajo
+                                                        colaborativo con el equipo de desarrollo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+        </section>
+        
+        <section class="" id="educacion">
+            <div class="container">
+
+            </div>
+        </section>
+
+        <footer class="bg-dark text-center text-light py-4">
+            <p class="mb-0"><strong>Gerardo Moraga 2023 </strong> - © Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    
+    
+    <script src="assets/js/funciones.js"></script>
+</body>
+
+</html>
