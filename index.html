@@ -30,31 +30,32 @@
         <div class="container-fluid">
             <a class="navbar-brand ps-2" href=".">Gerardo Moraga</a>
             <!-- CAMBIO DE ICONO MENÚ HAMBURGUESA A DINAMICO -->
-            <button id="nav-hamburguer-button" class="navbar-toggler collapsed d-flex d-sm-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="nav-hamburguer-button" class="navbar-toggler collapsed d-flex d-sm-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-cv" aria-controls="navbar-cv" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbar-cv">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#inicio">Acerca de Mí</a>
+                        <a class="nav-link active" id="nav-link-1" href="#inicio">Acerca de Mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                        <a class="nav-link" id="nav-link-2" href="#experiencia">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#educacion">Educación</a>
+                        <a class="nav-link" id="nav-link-3" href="#educacion">Educación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#certificacion">Certificación</a>
+                        <a class="nav-link" id="nav-link-4" href="#certificacion">Certificación</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- CONTENEDOR PRINCIPAL DE LA PÁGINA -->
     <div id="contenedor-pagina" class="normal-size">
-        <!-- CARD PARA MOSTRAR INFORMACIÓN PERSONAL -->
+        <!-- INICIO SECCIÓN DATOS PERSONALES -->
         <main class="pt-5" id="inicio">
             <div class="container pt-5 pb-5">
                 <!-- INICIO FILA -->
@@ -66,17 +67,18 @@
                                 <div class="col-5 col-sm-5 col-md-4 p-3 d-flex align-items-center">
                                     <img src="assets/img/perfil-inicio.jpg" class="img-fluid rounded-start" alt="">
                                 </div>
+                                <!-- DATOS PERSONALES -->
                                 <div class="col-7 col-sm-7 col-md-8 pt-4">
                                     <div class="card-body">
-                                        <div class="row ps-2">
+                                        <div class="row ps-2 pt-4">
                                             <h4 class="card-title p-0 m-0">Gerardo Moraga</h4>
                                             <p class="card-text p-0 m-0">Ingeniero en Informática</p>
                                         </div>
                                         <div class="w-100">
                                             <hr>
                                         </div>
-                                        <div class="tabla-datos-personales pt-2">
-                                            <div class="row-datos-personales row">
+                                        <div class="informacion-personal pt-2">
+                                            <div class="row-datos-personales row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Edad</strong></p>
                                                 </div>
@@ -84,7 +86,7 @@
                                                     <p class="p-0 m-0">28</p>
                                                 </div>
                                             </div>
-                                            <div class="row-datos-personales row">
+                                            <div class="row-datos-personales row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Dirección</strong></p>
                                                 </div>
@@ -92,7 +94,7 @@
                                                     <p class="p-0 m-0">Santiago, Región Metropolitana, Chile</p>
                                                 </div>
                                             </div>
-                                            <div class="row-datos-personales row">
+                                            <div class="row-datos-personales row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Correo</strong></p>
                                                 </div>
@@ -100,7 +102,7 @@
                                                     <p class="p-0 m-0">moraga.ga@gmail.com</p>
                                                 </div>
                                             </div>
-                                            <div class="row-datos-personales row">
+                                            <div class="row-datos-personales row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Teléfono</strong></p>
                                                 </div>
@@ -108,7 +110,7 @@
                                                     <p class="p-0 m-0">+569 3029 4271</p>
                                                 </div>
                                             </div>
-                                            <div class="row-datos-personales row">
+                                            <div class="row-datos-personales row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Portafolio</strong></p>
                                                 </div>
@@ -119,7 +121,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- FOOTER CARD -->
+                                <!-- FOOTER CARD DATOS PERSONALES -->
                                 <div class="card-footer p-0 m-0 py-2">
                                     <div class="d-flex justify-content-center py-4 gap-4 text-light">
                                         <a href="https://www.facebook.com/gerardo.moraga/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook fa-2xl"></i></a>
@@ -134,6 +136,7 @@
                 </div>
                 <!-- FIN FILA -->
                 <!-- INICIO FILA 2 -->
+                <!-- DESCARGAR DOCUMENTO CV -->
                 <div class="row pt-2">
                     <div class="col-12 d-flex justify-content-center">
                         <a class="btn" id="boton-descargar-cv">Descargar CV</a>
@@ -141,6 +144,7 @@
                 </div>
                 <!-- FIN FILA 2-->
                 <!-- INICIO FILA 3 -->
+                <!-- TEXTO PRESENTACIÓN -->
                 <div class="row pt-4 d-flex justify-content-center">
                     <div class="col-11 text-center">
                         <p class="text-white texto-presentacion">Hola soy Gerardo Moraga un Ingeniero en Informática con 2 años de experiencia que actualmente se desempeña 
@@ -155,13 +159,14 @@
                 <!-- FIN FILA 3-->      
             </div>
         </main>
-
+        <!-- FIN SECCIÓN DATOS PERSONALES -->
+        <!-- SEPARADOR -->
         <hr class="separador">
         <!-- SECCIÓN DE EXPERIENCIA LABORAL -->
         <section id="experiencia">
             <div class="container pt-2">
                 <div class="row text-center pt-5 text-white">
-                    <h1>Experiencia</h1>
+                    <h1 class="titulo-experiencia">Experiencia</h1>
                 </div>
                 <!-- INICIO FILA 1 -->
                 <!-- TRABAJO NÚMERO 1 -->
@@ -173,31 +178,75 @@
                                 <li>
                                     <div class="card principal-card">
                                         <div class="card-body">
-                                            <h4 class="card-title">Innovapay</h4>
-                                            <h5 class="card-title">Ingeniero de Software</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted"><i class="fa-regular fa-calendar"></i> &nbsp;Mayo 2022 - A la fecha</h6>
-                                            <p class="card-text">Encargado de realizar mejoras y creación de nuevas 
+                                            <!-- CARGO -->
+                                            <h4 class="card-title texto-cargo ps-2">Ingeniero de Software</h5>
+                                            <!-- EMPRESA -->
+                                            <h5 class="card-title pb-1 texto-empresa ps-2">Innovapay</h4>
+                                            <!-- FECHA -->
+                                            <h6 class="card-subtitle pb-2 text-muted texto-tiempo ps-2"><i class="fa-regular fa-calendar"></i> &nbsp;Mayo 2022 - A la fecha</h6>
+                                            <!-- TEXTO EXPLICACIÓN DE TRABAJO CON BOTON COLAPSABLE -->
+                                            <p class="card-text ps-2 p-0 m-0 pb-2 texto-resumen-cargo">Encargado de realizar mejoras y creación de nuevas 
                                                 aplicaciones, interaccion con clientes orientado al rubro financiero. 
-                                                <br><strong><a class="link link-ver-mas-experiencia" data-bs-toggle="collapse" href="#contenido-card-1" role="button" aria-expanded="false" aria-controls="contenido-card-1">Ver más</a></strong>
                                             </p>
-                                            <div class="collapse" id="contenido-card-1">
-                                                <div class="card card-body contenido-card">
-                                                    <p class="p-0 m-0">Adaptación continua de aplicación conciliadora de transacciones entre instituciones financieras, gestionada a través de SSIS por los grandes volúmenes de datos procesados cada día.</p>
+                                            <!-- LINK VER MAS DINAMICO -->
+                                            <a class="link link-ver-mas ps-2" id="link-ver-mas-1" data-bs-toggle="collapse" href="#contenido-experiencia-card-1" role="button" aria-expanded="false" aria-controls="contenido-experiencia-card-1">Ver más</a>
+                                            <hr>
+                                            <!-- CONTENIDO COLAPSADO NÚMERO 1 -->
+                                            <div class="collapse" id="contenido-experiencia-card-1">
+                                                <!-- SE ORDENA LA INFORMACIÓN -->
+                                                <div class="card card-body contenido-colapsado-experiencia">
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">
+                                                            Adaptación continua de aplicación conciliadora de transacciones entre instituciones financieras, 
+                                                            gestionada a través de SSIS por los grandes volúmenes de datos procesados cada día.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                     <hr>
-                                                    <p class="p-0 m-0">Creación de aplicaciones en Python como apoyo a proceso de conciliación haciendo legible las interfaces al proceso de ETL, ya sea ordenando o extrayendo la data necesaria. Python 3.7.</p>
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">
+                                                            Creación de aplicaciones en Python como apoyo a proceso de conciliación haciendo legible las 
+                                                            interfaces al proceso de ETL, ya sea ordenando o extrayendo la data necesaria. Python 3.7.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                     <hr>
-                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas, para realización de QA, con la capacidad de procesar diversas interfaces y líneas semanales para no dejar registro de data sensible. Python 3.7 y SQLite.</p>
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">
+                                                            Creación de aplicación que ofusca datos sensibles en interfaces productivas, para realización de QA, 
+                                                            con la capacidad de procesar diversas interfaces y líneas semanales para no dejar 
+                                                            registro de data sensible. Python 3.7 y SQLite.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                     <hr>
-                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas y se
-                                                        encuentra como intermediaria en proceso de conciliación para que este no funcione con
-                                                        información sensible, dando seguridad al proceso. Manteniendo así los datos ofuscados
-                                                        en otra base de datos con llaves criptográficas. Creada en C#, Net Framework 4.7, Azure
-                                                        Key Vault y Base de datos SQL Server 2019.</p>
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">Creación de aplicación que ofusca datos sensibles en interfaces productivas y se
+                                                            encuentra como intermediaria en proceso de conciliación para que este no funcione con
+                                                            información sensible, dando seguridad al proceso. Manteniendo así los datos ofuscados
+                                                            en otra base de datos con llaves criptográficas. Creada en C#, Net Framework 4.7, Azure
+                                                            Key Vault y Base de datos SQL Server 2019.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                     <hr>
-                                                    <p class="p-0 m-0">Utilización de Azure DevOps para gestión de versionamiento de aplicaciones y trabajo
-                                                        colaborativo con el equipo de desarrollo.
-                                                    </p>
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">
+                                                            Utilización de Azure DevOps para gestión de versionamiento de aplicaciones y trabajo
+                                                            colaborativo con el equipo de desarrollo.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <!-- LINK VER MENOS DINAMICO -->
+                                            <div class="pt-4 d-none" id="link-ver-menos-1">
+                                                <a class="link link-ver-mas ps-2" data-value="link-ver-menos-1" data-bs-toggle="collapse" href="#contenido-experiencia-card-1" role="button" aria-expanded="false" aria-controls="contenido-experiencia-card-1">Ver menos</a>
                                             </div>
                                         </div>
                                     </div>
@@ -206,30 +255,45 @@
                                 <li>
                                     <div class="card principal-card">
                                         <div class="card-body">
-                                            <h4 class="card-title">Innovapay</h4>
-                                            <h5 class="card-title">Analista de Sistemas (Externo Banco Itaú)</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted"><i class="fa-regular fa-calendar"></i> &nbsp;Octubre 2021 - Abril 2022</h6>
-                                            <p class="card-text">Encargado de crear y optimizar procesos de apoyo para los usuarios.
-                                                <br><strong><a class="link link-ver-mas-experiencia" data-bs-toggle="collapse" href="#contenido-card-2" role="button" aria-expanded="false" aria-controls="contenido-card-2">Ver más</a></strong>
+                                            <!-- CARGO -->
+                                            <h4 class="card-title texto-cargo ps-2">Analista de Sistemas (Externo Banco Itaú)</h5>
+                                            <!-- EMPRESA -->
+                                            <h5 class="card-title pb-1 texto-empresa ps-2">Innovapay</h4>
+                                            <!-- FECHA -->
+                                            <h6 class="card-subtitle pb-2 text-muted texto-tiempo ps-2"><i class="fa-regular fa-calendar"></i> &nbsp;Octubre 2021 - Abril 2022</h6>
+                                            <!-- TEXTO EXPLICACIÓN DE TRABAJO CON BOTON COLAPSABLE -->
+                                            <p class="card-text ps-2 p-0 m-0 pb-2 texto-resumen-cargo">Encargado de crear y optimizar procesos de apoyo para los usuarios. 
                                             </p>
-                                            <div class="collapse" id="contenido-card-2">
-                                                <div class="card card-body contenido-card">
-                                                    <p class="p-0 m-0">Adaptación continua de aplicación conciliadora de transacciones entre instituciones financieras, gestionada a través de SSIS por los grandes volúmenes de datos procesados cada día.</p>
+                                            <!-- LINK VER MAS DINAMICO -->
+                                            <a class="link link-ver-mas ps-2" id="link-ver-mas-2" data-bs-toggle="collapse" href="#contenido-experiencia-card-2" role="button" aria-expanded="false" aria-controls="contenido-experiencia-card-2">Ver más</a>
+                                            <hr>
+                                            <!-- CONTENIDO COLAPSADO NÚMERO 2 -->
+                                            <div class="collapse" id="contenido-experiencia-card-2">
+                                                <!-- SE ORDENA LA INFORMACIÓN -->
+                                                <div class="card card-body contenido-colapsado-experiencia">
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">
+                                                            Mejora de procesos con Python, otorgando a usuarios procesos automáticos y más eficientes, 
+                                                            realizando carga o generación de nuevos datos con T-SQL permitiendo así el análisis de la información y 
+                                                            generación de reportes.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                     <hr>
-                                                    <p class="p-0 m-0">Creación de aplicaciones en Python como apoyo a proceso de conciliación haciendo legible las interfaces al proceso de ETL, ya sea ordenando o extrayendo la data necesaria. Python 3.7.</p>
-                                                    <hr>
-                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas, para realización de QA, con la capacidad de procesar diversas interfaces y líneas semanales para no dejar registro de data sensible. Python 3.7 y SQLite.</p>
-                                                    <hr>
-                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas y se
-                                                        encuentra como intermediaria en proceso de conciliación para que este no funcione con
-                                                        información sensible, dando seguridad al proceso. Manteniendo así los datos ofuscados
-                                                        en otra base de datos con llaves criptográficas. Creada en C#, Net Framework 4.7, Azure
-                                                        Key Vault y Base de datos SQL Server 2019.</p>
-                                                    <hr>
-                                                    <p class="p-0 m-0">Utilización de Azure DevOps para gestión de versionamiento de aplicaciones y trabajo
-                                                        colaborativo con el equipo de desarrollo.
-                                                    </p>
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">
+                                                            Generación de procesos con SSIS para volúmenes de datos más grandes y procesamiento más complejo, 
+                                                            para integración final con SQL Server y que estos no fueran parte de las labores de los usuarios.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <!-- LINK VER MENOS DINAMICO -->
+                                            <div class="pt-4 d-none" id="link-ver-menos-2">
+                                                <a class="link link-ver-mas ps-2" data-value="link-ver-menos-2" data-bs-toggle="collapse" href="#contenido-experiencia-card-2" role="button" aria-expanded="false" aria-controls="contenido-experiencia-card-2">Ver menos</a>
                                             </div>
                                         </div>
                                     </div>
@@ -238,54 +302,82 @@
                                 <li>
                                     <div class="card principal-card">
                                         <div class="card-body">
-                                            <h4 class="card-title">PAD Systems</h4>
-                                            <h5 class="card-title">Analista de Sistemas (Externo Grupo MOK)</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted"><i class="fa-regular fa-calendar"></i> &nbsp;Abril 2021 - Septiembre 2021</h6>
-                                            <p class="card-text">Encargado de crear, optimizar y realizar migraciones de sistemas.
-                                                <br><strong><a class="link link-ver-mas-experiencia" data-bs-toggle="collapse" href="#contenido-card-3" role="button" aria-expanded="false" aria-controls="contenido-card-1">Ver más</a></strong>
+                                            <!-- CARGO -->
+                                            <h4 class="card-title texto-cargo ps-2">Analista de Sistemas (Externo Grupo MOK)</h5>
+                                            <!-- EMPRESA -->
+                                            <h5 class="card-title pb-1 texto-empresa ps-2">PAD Systems</h4>
+                                            <!-- FECHA -->
+                                            <h6 class="card-subtitle pb-2 text-muted texto-tiempo ps-2"><i class="fa-regular fa-calendar"></i> &nbsp;Abril 2021 - Septiembre 2021</h6>
+                                            <!-- TEXTO EXPLICACIÓN DE TRABAJO CON BOTON COLAPSABLE -->
+                                            <p class="card-text ps-2 p-0 m-0 pb-2 texto-resumen-cargo">Encargado de crear, optimizar y realizar migraciones de sistemas.
                                             </p>
-                                            <div class="collapse" id="contenido-card-3">
-                                                <div class="card card-body contenido-card">
-                                                    <p class="p-0 m-0">Adaptación continua de aplicación conciliadora de transacciones entre instituciones financieras, gestionada a través de SSIS por los grandes volúmenes de datos procesados cada día.</p>
+                                            <!-- LINK VER MAS DINAMICO -->
+                                            <a class="link link-ver-mas ps-2" id="link-ver-mas-3" data-bs-toggle="collapse" href="#contenido-experiencia-card-3" role="button" aria-expanded="false" aria-controls="contenido-experiencia-card-3">Ver más</a>
+                                            <hr>
+                                            <!-- CONTENIDO COLAPSADO NÚMERO 1 -->
+                                            <div class="collapse" id="contenido-experiencia-card-3">
+                                                <!-- SE ORDENA LA INFORMACIÓN -->
+                                                <div class="card card-body contenido-colapsado-experiencia">
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">
+                                                            Migración de aplicación Web a nuevo estándar requeridos por la organización, 
+                                                            separando el Front-End del Back-End generando un nuevo modelo en C# con patrón diseño MVC 5, 
+                                                            Net Framework 4.5, JS ECMAScript 6 y Bootstrap 4.5.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                     <hr>
-                                                    <p class="p-0 m-0">Creación de aplicaciones en Python como apoyo a proceso de conciliación haciendo legible las interfaces al proceso de ETL, ya sea ordenando o extrayendo la data necesaria. Python 3.7.</p>
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">
+                                                            Creación de API para alimentar nueva aplicación Web, con seguridad por Token de acceso, 
+                                                            migrando los métodos de la antigua Aplicación a nuevos métodos con reconstrucción de Script’s en 
+                                                            Base de datos. C# patrón de diseño MVC 5, Net Framework 4.5, Entity Framework 6.0 y Base de datos SQL Server 2016.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                     <hr>
-                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas, para realización de QA, con la capacidad de procesar diversas interfaces y líneas semanales para no dejar registro de data sensible. Python 3.7 y SQLite.</p>
-                                                    <hr>
-                                                    <p class="p-0 m-0">Creación de aplicación que ofusca datos sensibles en interfaces productivas y se
-                                                        encuentra como intermediaria en proceso de conciliación para que este no funcione con
-                                                        información sensible, dando seguridad al proceso. Manteniendo así los datos ofuscados
-                                                        en otra base de datos con llaves criptográficas. Creada en C#, Net Framework 4.7, Azure
-                                                        Key Vault y Base de datos SQL Server 2019.</p>
-                                                    <hr>
-                                                    <p class="p-0 m-0">Utilización de Azure DevOps para gestión de versionamiento de aplicaciones y trabajo
-                                                        colaborativo con el equipo de desarrollo.</p>
+                                                    <div>
+                                                        <span class="bracket-icon">{</span>
+                                                        <p class="p-0 m-0 ps-3">
+                                                            Utilización de GitHub para versionamiento de aplicaciones y trabajo colaborativo con el equipo de desarrollo.
+                                                        </p>
+                                                        <span class="bracket-icon">};</span>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <!-- LINK VER MENOS DINAMICO -->
+                                            <div class="pt-4 d-none" id="link-ver-menos-3">
+                                                <a class="link link-ver-mas ps-2" data-value="link-ver-menos-3" data-bs-toggle="collapse" href="#contenido-experiencia-card-3" role="button" aria-expanded="false" aria-controls="contenido-experiencia-card-3">Ver menos</a>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
-                </div>
-                
+                </div>   
             </div> 
         </section>
+        <!-- FIN SECCIÓN EXPERIENCIA LABORAL -->
+        <!-- SEPARADOR -->
         <hr class="separador">
-
+        <!-- SECCIÓN DE EDUCACIÓN -->
         <section id="educacion">
             <div class="container pt-2">
+                <!-- INICIO FILA 1 DE EDUCACIÓN -->
                 <div class="row text-center pt-5 text-white">
                     <h1>Educación</h1>
                 </div>
                 <div class="row pt-4 pb-5">
+                    <!-- CIRCULO CONTENEDOR DE FECHA -->
                     <div class="col-3 col-sm-3 col-md-2">
                         <div class="circulo">
                             <p class="px-1">2023 - A la fecha</p>
                         </div>
                     </div>
+                    <!-- CONTENEDOR DATOS -->
                     <div class="col-9 col-sm-9 col-md-10 my-auto">
                         <div class="card">
                             <div class="card-body">
@@ -295,12 +387,16 @@
                         </div>
                     </div>
                 </div>
+                <!-- FIN FILA 1 DE EDUCACIÓN -->
+                <!-- INICIO FILA 2 DE EDUCACIÓN -->
                 <div class="row pb-5">
+                    <!-- CIRCULO CONTENEDOR DE FECHA -->
                     <div class="col-3 col-sm-3 col-md-2">
                         <div class="circulo">
                             <p class="px-1">2021-2022</p>
                         </div>
                     </div>
+                    <!-- CONTENEDOR DATOS -->
                     <div class="col-9 col-sm-9 col-md-10 my-auto">
                         <div class="card">
                             <div class="card-body">
@@ -310,12 +406,16 @@
                         </div>
                     </div>
                 </div>
+                <!-- FIN FILA 2 DE EDUCACIÓN -->
+                <!-- INICIO FILA 3 DE EDUCACIÓN -->
                 <div class="row pb-5">
+                    <!-- CIRCULO CONTENEDOR DE FECHA -->
                     <div class="col-3 col-sm-3 col-md-2">
                         <div class="circulo">
                             <p class="px-1">2016-2019</p>
                         </div>
                     </div>
+                    <!-- CONTENEDOR DATOS -->
                     <div class="col-9 col-sm-9 col-md-10 my-auto">
                         <div class="card">
                             <div class="card-body">
@@ -325,12 +425,16 @@
                         </div>
                     </div>
                 </div>
+                <!-- FIN FILA 3 DE EDUCACIÓN -->
+                <!-- INICIO FILA 4 DE EDUCACIÓN -->
                 <div class="row pb-5">
+                    <!-- CIRCULO CONTENEDOR DE FECHA -->
                     <div class="col-3 col-sm-3 col-md-2">
                         <div class="circulo">
                             <p class="px-1">2010-2014</p>
                         </div>
                     </div>
+                    <!-- CONTENEDOR DATOS -->
                     <div class="col-9 col-sm-9 col-md-10 my-auto">
                         <div class="card">
                             <div class="card-body">
@@ -342,7 +446,10 @@
                 </div>
             </div>
         </section>
-
+        <!-- FIN SECCIÓN EDUCACIÓN -->
+        <!-- SEPARADOR -->
+        <hr class="separador">
+        <!-- SECCIÓN DE CERTIFICACIÓN -->
         <section id="certificacion">
             <div class="container pt-2">
                 <div class="row text-center pt-5 text-white">
@@ -372,15 +479,16 @@
                 </div>
             </div>
         </section>
-
+        <!-- FIN SECCIÓN CERTIFICACIÓN -->
+        <!-- SEPARADOR -->
+        <hr class="separador">
+        <!-- SECCIÓN DE FOOTER -->
         <footer class="bg-dark text-center text-light py-4">
             <p class="mb-0"><strong>Gerardo Moraga 2023 </strong> - © Todos los derechos reservados.</p>
         </footer>
     </div>
 
-    
-    
+    <!-- IMPORTACIÓN JS PERSONAL -->
     <script src="assets/js/funciones.js"></script>
 </body>
-
 </html>

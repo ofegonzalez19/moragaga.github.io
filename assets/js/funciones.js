@@ -1,13 +1,10 @@
 // AL CARGAR LA PÁGINA REGULA EL TAMAÑO DEL NAVBAR A LA VARIABLE CSS
 window.addEventListener("load", () => {
-    const NavPx = document.querySelector(".navbar").offsetHeight
-    const ElementoUlNav = document.querySelector(".navbar-nav")
-    const pixelesTotales = ElementoUlNav.childElementCount * 40 + NavPx
-    document.documentElement.style.setProperty('--heightLarge', `${NavPx}px`)
-    document.documentElement.style.setProperty('--heightSmall', `${pixelesTotales}px`)
+    const navbarHeight = document.querySelector(".navbar").offsetHeight
+    document.documentElement.style.setProperty('--heightNavbar', `${navbarHeight}px`)
 });
 
-// Función que empuja el contenido en el menú de hamburguesa
+// Función cambia el estado del contenedor principal en función del navbar
 document.querySelector("#nav-hamburguer-button").addEventListener("click", () => {
     // Obtiene el div principal
     const divPush = document.querySelector("#contenedor-pagina");
@@ -28,7 +25,6 @@ window.addEventListener("resize", () => {
 });
 
 window.addEventListener("scroll", () => {
-
     if (window.scrollY <= 40){
         const element = document.querySelector(".navbar-nav").firstElementChild.firstElementChild;
 
@@ -39,8 +35,30 @@ window.addEventListener("scroll", () => {
             element.classList.add("active");
         }
     }
+    // else if ((document.querySelector("body").offsetHeight-5) <= (window.innerHeight + window.scrollY) ){
+    //     const element = document.querySelector(".navbar-nav").lastElementChild.firstElementChild;
+    //     if (element.classList.contains("active")){
+    //         return;
+    //     }
+    //     else {
+    //         navbarLink.forEach((x)=> {
+    //             x.className = "nav-link";
+    //         });
+    //         element.classList.add("active");
+    //     }
+    // }
+});
 
-    
+// Función que deja activo en el navbar el item seleccionado
+const navbarLink = document.querySelectorAll(".nav-link");
+navbarLink.forEach((elemento) => {
+    elemento.addEventListener("click", (e)=> {
+
+        navbarLink.forEach((x)=> {
+            x.className = "nav-link";
+        });
+        e.target.classList.add("active");
+    })
 });
 
 document.querySelectorAll(".fa-brands").forEach((elemento) => {
@@ -52,8 +70,17 @@ document.querySelectorAll(".fa-brands").forEach((elemento) => {
     });
 });
 
-document.querySelectorAll(".link-ver-mas-experiencia").forEach((elemento) => {
+// Función de apoyo para link ver más
+document.querySelectorAll(".link-ver-mas").forEach((elemento) => {
     elemento.addEventListener("click", (e) => {
-        e.target.innerHTML = e.target.innerHTML === 'Ver más' ? 'Ver menos' : 'Ver más';
+        // Genera el link a remover efecto
+        const linkID = e.target.innerHTML === 'Ver más' ? `#link-ver-menos-${e.target.id.slice(-1)}` : `#link-ver-mas-${e.target.getAttribute("data-value").slice(-1)}`;
+
+        // Oculta el seleccionado
+        e.target.innerHTML === 'Ver más' ? e.target.classList.add("d-none") :  document.querySelector(`#${e.target.getAttribute("data-value")}`).classList.add("d-none");
+
+        // Muestra el contrario
+        document.querySelector(linkID).classList.remove("d-none");
     });
 });
+

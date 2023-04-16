@@ -1,135 +1,236 @@
+/* Variables CSS */
 :root {
-    --heightLarge: 0px;
-    --background-pred: #000;
-    --heightSmall: 0px;
+    --heightNavbar: 0px;
     --color-purple: #7952B3;
 }
 
+/* Modificación html para movimiento de scroll entre secciones */
 html {
     scroll-behavior: smooth;
 }
 
+/* Configuración generarl css */
 body {
     font-family: 'Rubik', sans-serif;
+    font-weight: 300;
     margin: 0;
     padding: 0;
-    background: var(--background-pred);
+    background: #000;
     position: relative;
 }
 
 
-#navbarNav {
+/* Contenedor con contenido página para que se empuje bajo el navbar  */
+#contenedor-pagina {
+    padding-top: var(--heightNavbar);
+    background: #000;
+}
+
+/* Configuración general para tamaño pantalla pequeña */
+@media (max-width: 576px) {
+
+    /* Configuración texto navbar */
+    #navbar-cv a {
+        font-size: 16px;
+        padding-left: 1em;
+    }
+
+    /* Configuración datos personales eleva la card */
+    #inicio .container {
+        padding-top: 0 !important;
+    }
+
+    /* Tamaño titulo nombre  */
+    /* #inicio .card-title {
+        font-size: 16px;
+    } */
+
+    /* #inicio .card-text{
+        font-size: 13px;
+    } */
+
+    /* Disminuy tamaño texto datos personales */
+    /* #inicio .tabla-datos-personales {
+        font-size: 11px;
+    } */
+
+    /* Disminuye el tamaño de la presentación */
+    #inicio .texto-presentacion {
+        font-size: 14px;
+    }
+
+    #experiencia .texto-cargo {
+        font-size: 17px;
+    }
+    
+    #experiencia .texto-empresa {
+        font-size: 15px;
+    }
+}
+
+/*  -------------------------------
+    - INICIO CONFIGURACIÓN NAVBAR -
+    -------------------------------
+*/
+
+/* Se agrega grosor a texto de navbar */
+#navbar-cv a {
+    font-weight: 400 !important;
+}
+
+/* Configuración desplazamiento navbar */
+#navbar-cv {
     transition: height .5s ease-in-out !important;
 }
 
-.normal-size {
-    background: var(--background-pred);
-    transition: .5s ease-in-out;
-    transform: translate(0px, var(--heightLarge)); 
-}
-
-
-.minimal-size{
-    background: var(--background-pred);
-    transition: .5s ease-in-out;
-    transform: translate(0px, var(--heightSmall)); 
-}
-
-.tabla-datos-personales {
-    font-size: 16px;
-}
-
-.row-datos-personales {
-    padding-bottom: .5em;
-}
-
-main .card-body {
-    padding-top: 2.5em;
-}
-
-main hr {
-    background-color: var(--color-purple);
-}
-
-@media (max-width: 576px) {
-    main {
-        padding-top: 0 !important;
-    }
-    
-    main .container {
-        padding-top: 0 !important;
-    }
-
-    main .card-title {
-        font-size: 16px;
-    }
-
-    main .card-text{
-        font-size: 13px;
-    }
-
-    .texto-presentacion {
+/* Cuando el tamaño de la pantalla sea menor a 650px */
+@media (max-width: 650px) {
+    /* Reduce tamaño de texto para que no se desplace */
+    #navbar-cv {
         font-size: 12px;
     }
-
-    .tabla-datos-personales {
-        font-size: 11px;
-    }
 }
+
+
+/*  -----------------------------------------
+    - INICIO CONFIGURACIÓN DATOS PERSONALES -
+    -----------------------------------------
+*/
+
+#inicio hr {
+    background-color: var(--color-purple);
+    opacity: 1;
+}
+
+/* #inicio .tabla-datos-personales {
+    font-size: 16px;
+} */
+
+/* .row-datos-personales {
+    padding-bottom: .5em;
+} */
+
+/* main .card-body {
+    padding-top: 2.5em;
+} */
 
 @media (max-width: 768px) {
-    main .card-title {
+    /* main .card-title {
         font-size: 15px;
-    }
+    } */
 
-    main .card-text{
+    /* main .card-text{
         font-size: 12px;
-    }
+    } */
 
-    .tabla-datos-personales {
+    /* Texto datos personales disminuye */
+    #inicio .informacion-personal {
         font-size: 10px;
     }
 }
 
-
-.card-footer {
+/* cambio de color footer card datos personales */
+#inicio .card-footer {
     background: var(--color-purple);
 }
 
-.card-footer a, a:hover {
+/* Forzado de color links a redes sociales */
+#inicio .card-footer a, a:hover {
     color: #FFF;
     text-decoration: none !important;
 }
 
+/* Estilo botón descarga de CV */
 #boton-descargar-cv {
     border-color: #7952B3 !important;
     color: #7952B3 !important;
+    font-weight: 100;
 }
 
+/* Estilo botón descarga cv al pasar por encima */
 #boton-descargar-cv:hover {
     border: 1px solid #FFF !important;
     background: #7952B3;
     color: #FFF !important;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-.contenido-card {
-    font-size: 13px;
-}
-
+/*  --------------------------------------------
+    - INICIO CONFIGURACIÓN EXPERIENCIA LABORAL -
+    --------------------------------------------
+*/
+/* fondo de seccion */
 #experiencia {
     background: var(--color-purple);
 }
 
-
-.link-ver-mas-experiencia {
-    color: #000;
-    text-decoration: none;
+#experiencia .titulo-experiencia{
+    font-weight: 900;
 }
 
-.link-ver-mas-experiencia:hover {
+/* Contenido con información colapsada */
+#experiencia .contenido-colapsado-experiencia {
+    font-size: 12px;
+}
+
+/* Texto del cargo */
+#experiencia .texto-cargo {
+    font-weight: 600;
+}
+
+/* Texto de la empresa */
+#experiencia .texto-empresa {
+    font-weight: 300;
+}
+
+/* Texto del tiempo */
+#experiencia .texto-tiempo {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+#experiencia .texto-resumen-cargo {
+    font-size: 13px;
+}
+
+/* Texto link ver más de texto colapsado */
+#experiencia .link-ver-mas {
     color: var(--color-purple);
+    text-decoration: none;
+    transition: 1s;
 }
+
+/* Texto link ver más de texto colapsado al hacer hover */
+#experiencia .link-ver-mas:hover {
+    font-size: 18px;
+}
+
+/* Configuración texto colapsado */
+#experiencia .contenido-colapsado-experiencia {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Configuración para brackets de texto colapsado */
+#experiencia .bracket-icon {
+    color: var(--color-purple) !important;
+    font-size: 15px;
+}
+
+/* Tamaño especial para texto en maximo tamaño indicado */
+@media (max-width: 770px) {
+
+    #experiencia .texto-cargo {
+        font-size: 19px;
+    }
+    
+    #experiencia .texto-empresa {
+        font-size: 17px;
+    }
+}
+
+
+
 
 .linea-tiempo hr {
     color: var(--color-purple);
