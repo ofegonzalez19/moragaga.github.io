@@ -60,12 +60,30 @@ body {
     }
 
     #experiencia .texto-cargo {
-        font-size: 17px;
+        font-size: 16px;
     }
     
     #experiencia .texto-empresa {
+        font-size: 14px;
+    }
+
+    #educacion .card-title {
         font-size: 15px;
     }
+    
+    #educacion .card-subtitle {
+        font-size: 12px;
+    }
+
+    #educacion .fecha-estudio {
+        font-size: 12px;
+    }
+
+}
+
+/* Titulo de cada sección */
+.titulo-bloque {
+    font-weight: 900;
 }
 
 /*  -------------------------------
@@ -164,9 +182,6 @@ body {
     background: var(--color-purple);
 }
 
-#experiencia .titulo-experiencia{
-    font-weight: 900;
-}
 
 /* Contenido con información colapsada */
 #experiencia .contenido-colapsado-experiencia {
@@ -229,6 +244,76 @@ body {
     }
 }
 
+/*  ----------------------------------------------
+    - INICIO CONFIGURACIÓN EXPERIENCIA EDUCACIÓN -
+    ----------------------------------------------
+*/
+
+/* Color del footer */
+#educacion .footer-educacion {
+    background-color: var(--color-purple);
+}
+
+/* Cambio de color blanco a iconos */
+#educacion .footer-educacion a {
+    color: white;
+}
+
+/* Inversión a color blanco fotos */
+#educacion .footer-educacion img {
+    filter: brightness(0) invert(1);
+}
+
+#educacion .card-title {
+    font-weight: 600;
+}
+
+#educacion .card-subtitle {
+    font-weight: 100;
+}
+
+/* Cambio texto por tamaño */
+@media (max-width: 768px) {
+
+    #educacion .card-title {
+        font-size: 16px;
+    }
+    
+    #educacion .card-subtitle {
+        font-size: 13px;
+    }
+
+    #educacion .fecha-estudio {
+        font-size: 13px;
+    }
+}
+
+#educacion hr {
+    background-color: var(--color-purple);
+}
+
+/* Configuración ciruclos de fechas */
+.circulo:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
+    background: var(--color-purple);
+    border: 1px solid #FFF;
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+.circulo p {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
 
 
 
@@ -259,27 +344,6 @@ body {
 }
 
 
-.circulo:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: auto;
-    padding-bottom: 100%;
-    background: var(--color-purple);
-    border: 1px solid #FFF;
-    -moz-border-radius: 50%; 
-    -webkit-border-radius: 50%; 
-    border-radius: 50%;
-}
-.circulo p {
-    float:left;
-    width:100%;
-    padding-top:50%;
-    line-height:1em;
-    margin-top:-0.5em;
-    text-align:center;
-    color:white;
-}
 
 #certificacion {
     background: var(--color-purple);

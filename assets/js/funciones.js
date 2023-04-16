@@ -24,6 +24,7 @@ window.addEventListener("resize", () => {
     } 
 });
 
+// Función de apoyo por el padding existente del navbar para que el primer item se marque activo
 window.addEventListener("scroll", () => {
     if (window.scrollY <= 40){
         const element = document.querySelector(".navbar-nav").firstElementChild.firstElementChild;
@@ -49,19 +50,19 @@ window.addEventListener("scroll", () => {
     // }
 });
 
-// Función que deja activo en el navbar el item seleccionado
-const navbarLink = document.querySelectorAll(".nav-link");
-navbarLink.forEach((elemento) => {
-    elemento.addEventListener("click", (e)=> {
+// // Función que deja activo en el navbar el item seleccionado
+// const navbarLink = document.querySelectorAll(".nav-link");
+// navbarLink.forEach((elemento) => {
+//     elemento.addEventListener("click", (e)=> {
 
-        navbarLink.forEach((x)=> {
-            x.className = "nav-link";
-        });
-        e.target.classList.add("active");
-    })
-});
+//         navbarLink.forEach((x)=> {
+//             x.className = "nav-link";
+//         });
+//         e.target.classList.add("active");
+//     })
+// });
 
-document.querySelectorAll(".fa-brands").forEach((elemento) => {
+document.querySelectorAll(".footer-datos-personales .fa-brands").forEach((elemento) => {
     elemento.addEventListener("mouseenter",(e)=>{
         e.target.classList.add("fa-bounce");
     });
@@ -81,6 +82,8 @@ document.querySelectorAll(".link-ver-mas").forEach((elemento) => {
 
         // Muestra el contrario
         document.querySelector(linkID).classList.remove("d-none");
+        // Retorna al inicio de la card
+        document.querySelector(linkID).focus();
     });
 });
 
