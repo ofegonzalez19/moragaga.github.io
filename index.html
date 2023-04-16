@@ -11,6 +11,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- LINK FONTAWESOME -->
     <script src="https://kit.fontawesome.com/85592b4203.js" crossorigin="anonymous"></script>
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
     <!-- LINK CSS PROPIO -->
     <link href="assets/css/index-style.css" rel="stylesheet">
     <link href="assets/css/hamburguer-style.css" rel="stylesheet">
@@ -24,7 +28,7 @@
     <!-- CAMBIO MENÚ HAMBURGUESA AL TAMAÑO SM -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark bg-gradient fixed-top" id="navbar-principal">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand ps-2" href=".">Gerardo Moraga</a>
             <!-- CAMBIO DE ICONO MENÚ HAMBURGUESA A DINAMICO -->
             <button id="nav-hamburguer-button" class="navbar-toggler collapsed d-flex d-sm-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
@@ -40,7 +44,10 @@
                         <a class="nav-link" href="#experiencia">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Educación</a>
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificacion">Certificación</a>
                     </li>
                 </ul>
             </div>
@@ -56,38 +63,59 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <!-- IMAGEN PERSONAL -->
-                                <div class="col-6 col-sm-6 col-md-4 p-3">
+                                <div class="col-5 col-sm-5 col-md-4 p-3 d-flex align-items-center">
                                     <img src="assets/img/perfil-inicio.jpg" class="img-fluid rounded-start" alt="">
                                 </div>
-                                <div class="col-6 col-sm-6 col-md-8 pt-4">
+                                <div class="col-7 col-sm-7 col-md-8 pt-4">
                                     <div class="card-body">
-                                        <h5 class="card-title p-0 m-0">Gerardo Moraga</h5>
-                                        <p class="card-text p-0 m-0">Ingeniero en Informática</p>
-                                        <div class="w-80">
+                                        <div class="row ps-2">
+                                            <h4 class="card-title p-0 m-0">Gerardo Moraga</h4>
+                                            <p class="card-text p-0 m-0">Ingeniero en Informática</p>
+                                        </div>
+                                        <div class="w-100">
                                             <hr>
                                         </div>
-                                        <div class="d-flex align-items-center">
-                                            <!-- TABLA CON DATOS PERSONALES -->
-                                            <table class="p-0 m-0 tabla-datos-personales">
-                                                <tbody>
-                                                    <tr>
-                                                        <th>Edad:</th>
-                                                        <td>28</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Dirección:&nbsp;</th>
-                                                        <td>San Pablo 1353, Departamento 1808, Santiago de Chile.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Correo:</th>
-                                                        <td>moraga.ga@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Telefono:</th>
-                                                        <td>+569 3029 4271</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="tabla-datos-personales pt-2">
+                                            <div class="row-datos-personales row">
+                                                <div class="col-5 col-sm-5 col-md-3 col-lg-2">
+                                                    <p class="p-0 m-0"><strong>Edad</strong></p>
+                                                </div>
+                                                <div class="col-7 col-sm-7 col-md-9 p-0 m-0">
+                                                    <p class="p-0 m-0">28</p>
+                                                </div>
+                                            </div>
+                                            <div class="row-datos-personales row">
+                                                <div class="col-5 col-sm-5 col-md-3 col-lg-2">
+                                                    <p class="p-0 m-0"><strong>Dirección</strong></p>
+                                                </div>
+                                                <div class="col-7 col-sm-7 col-md-9 p-0 m-0">
+                                                    <p class="p-0 m-0">Santiago, Región Metropolitana, Chile</p>
+                                                </div>
+                                            </div>
+                                            <div class="row-datos-personales row">
+                                                <div class="col-5 col-sm-5 col-md-3 col-lg-2">
+                                                    <p class="p-0 m-0"><strong>Correo</strong></p>
+                                                </div>
+                                                <div class="col-7 col-sm-7 col-md-9 p-0 m-0">
+                                                    <p class="p-0 m-0">moraga.ga@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="row-datos-personales row">
+                                                <div class="col-5 col-sm-5 col-md-3 col-lg-2">
+                                                    <p class="p-0 m-0"><strong>Teléfono</strong></p>
+                                                </div>
+                                                <div class="col-7 col-sm-7 col-md-9 p-0 m-0">
+                                                    <p class="p-0 m-0">+569 3029 4271</p>
+                                                </div>
+                                            </div>
+                                            <div class="row-datos-personales row">
+                                                <div class="col-5 col-sm-5 col-md-3 col-lg-2">
+                                                    <p class="p-0 m-0"><strong>Portafolio</strong></p>
+                                                </div>
+                                                <div class="col-7 col-sm-7 col-md-9 p-0 m-0">
+                                                    <a href="https://moragaga.github.io/CV-Gerardo-Moraga/" target="_blank" rel="nooponer noreferrer" class="p-0 m-0" ><i class="fa-solid fa-code-pull-request fa-lg fa-bounce">Visitar</i></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -97,6 +125,7 @@
                                         <a href="https://www.facebook.com/gerardo.moraga/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook fa-2xl"></i></a>
                                         <a href="https://www.instagram.com/moraga.ga/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-2xl"></i></a>
                                         <a href="https://www.linkedin.com/in/gerardo-moraga-gajardo-081aa41b5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                                        <a href="https://github.com/moragaga" target="_blank" rel="nooponer noreferrer"><i class="fa-brands fa-github fa-2xl"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -126,18 +155,23 @@
                 <!-- FIN FILA 3-->      
             </div>
         </main>
+
+        <hr class="separador">
         <!-- SECCIÓN DE EXPERIENCIA LABORAL -->
         <section id="experiencia">
-            <div class="container">
+            <div class="container pt-2">
+                <div class="row text-center pt-5 text-white">
+                    <h1>Experiencia</h1>
+                </div>
                 <!-- INICIO FILA 1 -->
                 <!-- TRABAJO NÚMERO 1 -->
-                <div class="row py-5">
+                <div class="row pt-2 pb-5">
                     <div class="col-12 text-center">
                         <div class="text-start">
                             <ul class="linea-tiempo">
                                 <!-- PUESTO 1-->
                                 <li>
-                                    <div class="card">
+                                    <div class="card principal-card">
                                         <div class="card-body">
                                             <h4 class="card-title">Innovapay</h4>
                                             <h5 class="card-title">Ingeniero de Software</h5>
@@ -170,7 +204,7 @@
                                 </li>
                                 <!-- PUESTO 2-->
                                 <li>
-                                    <div class="card">
+                                    <div class="card principal-card">
                                         <div class="card-body">
                                             <h4 class="card-title">Innovapay</h4>
                                             <h5 class="card-title">Analista de Sistemas (Externo Banco Itaú)</h5>
@@ -202,7 +236,7 @@
                                 </li>
                                 <!-- PUESTO 3-->
                                 <li>
-                                    <div class="card">
+                                    <div class="card principal-card">
                                         <div class="card-body">
                                             <h4 class="card-title">PAD Systems</h4>
                                             <h5 class="card-title">Analista de Sistemas (Externo Grupo MOK)</h5>
@@ -239,10 +273,103 @@
                 
             </div> 
         </section>
-        
-        <section class="" id="educacion">
-            <div class="container">
+        <hr class="separador">
 
+        <section id="educacion">
+            <div class="container pt-2">
+                <div class="row text-center pt-5 text-white">
+                    <h1>Educación</h1>
+                </div>
+                <div class="row pt-4 pb-5">
+                    <div class="col-3 col-sm-3 col-md-2">
+                        <div class="circulo">
+                            <p class="px-1">2023 - A la fecha</p>
+                        </div>
+                    </div>
+                    <div class="col-9 col-sm-9 col-md-10 my-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-start">Bootcamp Desarrollo Full Stack JavaScript</h5>
+                                <p class="card-subtitle">Desafío Latam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-3 col-sm-3 col-md-2">
+                        <div class="circulo">
+                            <p class="px-1">2021-2022</p>
+                        </div>
+                    </div>
+                    <div class="col-9 col-sm-9 col-md-10 my-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-start">Diplomado en Python Profesional</h5>
+                                <p class="card-subtitle">Universidad Católica de Chile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-3 col-sm-3 col-md-2">
+                        <div class="circulo">
+                            <p class="px-1">2016-2019</p>
+                        </div>
+                    </div>
+                    <div class="col-9 col-sm-9 col-md-10 my-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-start">Titulado de Ingenieria en Informática</h5>
+                                <p class="card-subtitle">Duoc UC, Sede San Joaquín</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-3 col-sm-3 col-md-2">
+                        <div class="circulo">
+                            <p class="px-1">2010-2014</p>
+                        </div>
+                    </div>
+                    <div class="col-9 col-sm-9 col-md-10 my-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-start">Enseñanza Media Científico - Humanista</h5>
+                                <p class="card-subtitle">Liceo Bicentenario Valentín Letelier</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificacion">
+            <div class="container pt-2">
+                <div class="row text-center pt-5 text-white">
+                    <h1>Certificación</h1>
+                </div>
+                <div class="row pt-4 pb-5">
+                    <div class="col-12 col-sm-6 pb-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Certificación Básica Power BI</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Universidad de Chile, Facultad de Cs. Físicas y
+                                    Matemáticas.</h6>
+                                <p class="card-text">Diciembre 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 pb-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Certificación Intermedia Power BI</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Universidad de Chile, Facultad de Cs. Físicas y
+                                    Matemáticas.</h6>
+                                <p class="card-text">Enero 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

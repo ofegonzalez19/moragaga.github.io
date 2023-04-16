@@ -50,3 +50,7 @@ ul.linea-tiempo > li {
     left: -10px;
     top: 0px;
 }
+
+.linea-tiempo .principal-card:hover {
+    background-color: #F0F0F0;
+}

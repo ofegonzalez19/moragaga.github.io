@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
     background: var(--background-pred);
@@ -35,18 +36,19 @@ body {
 }
 
 .tabla-datos-personales {
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.tabla-datos-personales th,td:not(first-child){
+.row-datos-personales {
     padding-bottom: .5em;
 }
 
+main .card-body {
+    padding-top: 2.5em;
+}
 
-@media (max-width: 767px) {
-    .tabla-datos-personales th{
-        vertical-align: top;
-    }
+main hr {
+    background-color: var(--color-purple);
 }
 
 @media (max-width: 576px) {
@@ -58,10 +60,37 @@ body {
         padding-top: 0 !important;
     }
 
-    .texto-presentacion {
+    main .card-title {
+        font-size: 16px;
+    }
+
+    main .card-text{
         font-size: 13px;
     }
+
+    .texto-presentacion {
+        font-size: 12px;
+    }
+
+    .tabla-datos-personales {
+        font-size: 11px;
+    }
 }
+
+@media (max-width: 768px) {
+    main .card-title {
+        font-size: 15px;
+    }
+
+    main .card-text{
+        font-size: 12px;
+    }
+
+    .tabla-datos-personales {
+        font-size: 10px;
+    }
+}
+
 
 .card-footer {
     background: var(--color-purple);
@@ -92,6 +121,7 @@ body {
     background: var(--color-purple);
 }
 
+
 .link-ver-mas-experiencia {
     color: #000;
     text-decoration: none;
@@ -109,4 +139,47 @@ body {
 .linea-tiempo .collapse {
     border: 1px solid var(--color-purple);
     border-radius: 6px;
+}
+
+.separador {
+    padding: 2px;
+    margin: 0;
+    background-color: #FFF;
+}
+
+.row-datos-personales a {
+    text-decoration: none;
+    color: #000;
+}
+
+.row-datos-personales a:hover {
+    text-decoration: none;
+    color: var(--color-purple);
+}
+
+
+.circulo:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
+    background: var(--color-purple);
+    border: 1px solid #FFF;
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+.circulo p {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
+
+#certificacion {
+    background: var(--color-purple);
 }
