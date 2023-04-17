@@ -15,11 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <!-- LINK SWEET ALERT -->
+    <!-- LINK SWEET ALERT PARA VENTANAS PERSONALIZADAS-->
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <!-- LINK CSS PROPIO -->
     <link href="assets/css/index-style.css" rel="stylesheet">
     <link href="assets/css/hamburguer-style.css" rel="stylesheet">
     <link href="assets/css/linea-tiempo-style.css" rel="stylesheet">
-    <!-- <link href="assets/css/new-linea-tiempo-style.css" rel="stylesheet"> -->
     <title>Gerardo Moraga</title>
 </head>
 
@@ -78,7 +81,7 @@
                                             <hr>
                                         </div>
                                         <div class="informacion-personal pt-2">
-                                            <div class="row-datos-personales row pb-1">
+                                            <div class="row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Edad</strong></p>
                                                 </div>
@@ -86,7 +89,7 @@
                                                     <p class="p-0 m-0">28</p>
                                                 </div>
                                             </div>
-                                            <div class="row-datos-personales row pb-1">
+                                            <div class="row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Dirección</strong></p>
                                                 </div>
@@ -94,7 +97,7 @@
                                                     <p class="p-0 m-0">Santiago, Región Metropolitana, Chile</p>
                                                 </div>
                                             </div>
-                                            <div class="row-datos-personales row pb-1">
+                                            <div class="row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Correo</strong></p>
                                                 </div>
@@ -102,7 +105,7 @@
                                                     <p class="p-0 m-0">moraga.ga@gmail.com</p>
                                                 </div>
                                             </div>
-                                            <div class="row-datos-personales row pb-1">
+                                            <div class="row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Teléfono</strong></p>
                                                 </div>
@@ -110,12 +113,13 @@
                                                     <p class="p-0 m-0">+569 3029 4271</p>
                                                 </div>
                                             </div>
-                                            <div class="row-datos-personales row pb-1">
+                                            <div class="row pb-1">
                                                 <div class="col-5 col-sm-5 col-md-3 col-lg-2">
                                                     <p class="p-0 m-0"><strong>Portafolio</strong></p>
                                                 </div>
                                                 <div class="col-7 col-sm-7 col-md-9 p-0 m-0">
-                                                    <a href="https://moragaga.github.io/CV-Gerardo-Moraga/" target="_blank" rel="nooponer noreferrer" class="p-0 m-0" ><i class="fa-solid fa-code-pull-request fa-lg fa-bounce">Visitar</i></a>
+                                                    <!-- <a href="https://moragaga.github.io/CV-Gerardo-Moraga/" target="_blank" rel="nooponer noreferrer" class="p-0 m-0" ><i class="fa-solid fa-code-pull-request fa-lg fa-bounce">Visitar</i></a> -->
+                                                    <a href="#" rel="nooponer noreferrer" class="p-0 m-0" id="link-portafolio">Pincha aquí para Visitar</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +143,7 @@
                 <!-- DESCARGAR DOCUMENTO CV -->
                 <div class="row pt-2">
                     <div class="col-12 d-flex justify-content-center">
-                        <a class="btn" id="boton-descargar-cv">Descargar CV</a>
+                        <a class="btn boton-descargar" id="boton-descargar-cv">Descargar CV</a>
                     </div>
                 </div>
                 <!-- FIN FILA 2-->
@@ -385,34 +389,37 @@
                                 <div class="card-body">
                                     <h5 class="card-title text-start pb-1 ps-2 pt-2">Bootcamp Desarrollo Full Stack JavaScript</h5>
                                     <hr class="m-0 p-0">
-                                    <p class="card-subtitle text-muted ps-2 pt-4"><i class="fa-solid fa-school"></i> Desafío Latam</p>
+                                    <p class="card-subtitle text-muted ps-2 pt-4"><i class="fa-solid fa-school"></i> &nbsp;Desafío Latam</p>
                                 </div>
                                 <!-- ICONOS CONOCIMIENTOS -->
                                 <div class="card-footer footer-educacion">
                                     <div class="row d-flex justify-content-center align-items-center py-1 gap-4 text-light">
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-square-js fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript"><i class="fa-brands fa-square-js fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-node-js fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="NodeJS"><i class="fa-brands fa-node-js fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-html5 fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="HTML5"><i class="fa-brands fa-html5 fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="CCS3"><i class="fa-brands fa-css3-alt fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-bootstrap fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap"><i class="fa-brands fa-bootstrap fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-react fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="React"><i class="fa-brands fa-react fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-git fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="GIT"><i class="fa-brands fa-git fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <img src="assets/img/postgresql.svg" class="p-0 m-0 img-fluid" width="40" height="40">
+                                            <!-- CLASE QUE MANTIENE LA IMAGEN COMO ICONO EN TAMAÑO NORMAL -->
+                                            <div class="container-img">
+                                                <img src="assets/img/postgresql.svg" data-bs-toggle="tooltip" data-bs-placement="top" title="PostgreSQL" class="p-0 m-0 img-fluid" >
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -428,7 +435,7 @@
                         <!-- CIRCULO CONTENEDOR DE FECHA -->
                         <div class="col-3 col-sm-3 col-md-2">
                             <div class="circulo">
-                                <p class="px-1 fecha-estudio">2021-2022</p>
+                                <p class="px-1 fecha-estudio">2021 - 2022</p>
                             </div>
                         </div>
                         <!-- CONTENEDOR DATOS -->
@@ -437,34 +444,43 @@
                                 <div class="card-body">
                                     <h5 class="card-title text-start pb-1 ps-2 pt-2">Diplomado en Python Profesional</h5>
                                     <hr class="m-0 p-0">
-                                    <p class="card-subtitle text-muted ps-2 pt-4"><i class="fa-solid fa-school"></i> Universidad Católica de Chile</p>
+                                    <p class="card-subtitle text-muted ps-2 pt-4"><i class="fa-solid fa-school"></i> &nbsp;Universidad Católica de Chile</p>
                                 </div>
                                 <!-- ICONOS CONOCIMIENTOS -->
                                 <div class="card-footer footer-educacion">
                                     <div class="row d-flex justify-content-center align-items-center py-1 gap-4 text-light">
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-python fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Python"><i class="fa-brands fa-python fa-2xl"></i></a>
+                                        </div>
+                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Django">
+                                            <!-- CLASE QUE MANTIENE LA IMAGEN COMO ICONO EN TAMAÑO NORMAL -->
+                                            <div class="container-img img-zoom">
+                                                <img src="assets/img/django.svg" class="p-0 m-0 img-fluid">
+                                            </div>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <img src="assets/img/django.svg" class="p-0 m-0 img-fluid" width="45" height="45">
-                                        </div>
-                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <img src="assets/img/mongodb.png" class="p-0 m-0 img-fluid" width="45" height="45">
+                                            <!-- CLASE QUE MANTIENE LA IMAGEN COMO ICONO EN TAMAÑO NORMAL -->
+                                            <div class="container-img img-zoom-min">
+                                                <img src="assets/img/mongodb.png" data-bs-toggle="tooltip" data-bs-placement="top" title="MongoDB" class="p-0 m-0 img-fluid">
+                                            </div>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1 p-0 m-0">
-                                            <img src="assets/img/mysql.svg" class="p-0 m-0 img-fluid" width="40" height="40">
+                                            <!-- CLASE QUE MANTIENE LA IMAGEN COMO ICONO EN TAMAÑO NORMAL -->
+                                            <div class="container-img">
+                                                <img src="assets/img/mysql.svg" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL" class="p-0 m-0 img-fluid">
+                                            </div>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-html5 fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="HTML5"><i class="fa-brands fa-html5 fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="CCS3"><i class="fa-brands fa-css3-alt fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-bootstrap fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap"><i class="fa-brands fa-bootstrap fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-square-js fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript"><i class="fa-brands fa-square-js fa-2xl"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -479,7 +495,7 @@
                         <!-- CIRCULO CONTENEDOR DE FECHA -->
                         <div class="col-3 col-sm-3 col-md-2">
                             <div class="circulo">
-                                <p class="px-1 fecha-estudio">2016-2019</p>
+                                <p class="px-1 fecha-estudio">2016 - 2019</p>
                             </div>
                         </div>
                         <!-- CONTENEDOR DATOS -->
@@ -488,46 +504,61 @@
                                 <div class="card-body">
                                     <h5 class="card-title text-start pb-1 ps-2 pt-2">Titulado de Ingenieria en Informática</h5>
                                     <hr class="m-0 p-0">
-                                    <p class="card-subtitle text-muted ps-2 pt-4"><i class="fa-solid fa-school"></i> Duoc UC, Sede San Joaquín</p>
+                                    <p class="card-subtitle text-muted ps-2 pt-4"><i class="fa-solid fa-school"></i> &nbsp;Duoc UC, Sede San Joaquín</p>
                                 </div>
                                 <!-- ICONOS CONOCIMIENTOS -->
                                 <div class="card-footer footer-educacion">
                                     <div class="row d-flex justify-content-center align-items-center py-1 gap-4 text-light">
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <img src="assets/img/csharp.png" class="p-0 m-0 img-fluid" width="30" height="30">
+                                            <!-- CLASE QUE MANTIENE LA IMAGEN COMO ICONO EN TAMAÑO NORMAL -->
+                                            <div class="container-img">
+                                                <img src="assets/img/csharp.png" data-bs-toggle="tooltip" data-bs-placement="top" title="C#" class="p-0 m-0 img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1" data-bs-toggle="tooltip" data-bs-placement="top" title=".NET">
+                                            <!-- CLASE QUE MANTIENE LA IMAGEN COMO ICONO EN TAMAÑO NORMAL -->
+                                            <div class="container-img img-zoom">
+                                                <img src="assets/img/dot-net.svg" class="p-0 m-0 img-fluid">
+                                            </div>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <img src="assets/img/dot-net.svg" class="p-0 m-0 img-fluid" width="45" height="45">
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Java"><i class="fa-brands fa-java fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-java fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Android"><i class="fa-brands fa-android fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-android fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="PHP"><i class="fa-brands fa-php fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-php fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="HTML5"><i class="fa-brands fa-html5 fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-html5 fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="CCS3"><i class="fa-brands fa-css3-alt fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap"><i class="fa-brands fa-bootstrap fa-2xl"></i></a>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-bootstrap fa-2xl"></i>
+                                            <a data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript"><i class="fa-brands fa-square-js fa-2xl"></i></a>
                                         </div>
-                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <i class="fa-brands fa-square-js fa-2xl"></i>
+                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 p-0 m-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Oracle">
+                                            <!-- CLASE QUE MANTIENE LA IMAGEN COMO ICONO EN TAMAÑO NORMAL -->
+                                            <div class="container-img img-zoom">
+                                                <img src="assets/img/oracle.svg" class="p-0 m-0 img-fluid">
+                                            </div>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1 p-0 m-0">
-                                            <img src="assets/img/oracle.svg" class="p-0 m-0 img-fluid" width="50" height="50">
+                                            <!-- CLASE QUE MANTIENE LA IMAGEN COMO ICONO EN TAMAÑO NORMAL -->
+                                            <div class="container-img">
+                                                <img src="assets/img/mysql.svg" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL" class="p-0 m-0 img-fluid">
+                                            </div>
                                         </div>
                                         <div class="col-2 col-sm-2 col-md-1 col-lg-1 p-0 m-0">
-                                            <img src="assets/img/mysql.svg" class="p-0 m-0 img-fluid" width="40" height="40">
-                                        </div>
-                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1 p-0 m-0">
-                                            <img src="assets/img/sqlserver.png" class="p-0 m-0 img-fluid" width="45" height="45">
+                                            <!-- CLASE QUE MANTIENE LA IMAGEN COMO ICONO EN TAMAÑO NORMAL -->
+                                            <div class="container-img img-zoom">
+                                                <img src="assets/img/sqlserver.png" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL Server" class="p-0 m-0 img-fluid">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -542,7 +573,7 @@
                         <!-- CIRCULO CONTENEDOR DE FECHA -->
                         <div class="col-3 col-sm-3 col-md-2">
                             <div class="circulo">
-                                <p class="px-1 fecha-estudio">2010-2014</p>
+                                <p class="px-1 fecha-estudio">2010 - 2014</p>
                             </div>
                         </div>
                         <!-- CONTENEDOR DATOS -->
@@ -551,15 +582,11 @@
                                 <div class="card-body">
                                     <h5 class="card-title text-start pb-1 ps-2 pt-2">Enseñanza Media Científico - Humanista</h5>
                                     <hr class="m-0 p-0">
-                                    <p class="card-subtitle text-muted ps-2 pt-4"><i class="fa-solid fa-school"></i> Liceo Bicentenario Valentín Letelier</p>
+                                    <p class="card-subtitle text-muted ps-2 pt-4"><i class="fa-solid fa-school"></i> &nbsp;Liceo Bicentenario Valentín Letelier</p>
                                 </div>
                                 <!-- ICONOS CONOCIMIENTOS -->
                                 <div class="card-footer footer-educacion">
-                                    <div class="row d-flex justify-content-center align-items-center py-1 gap-4 text-light">
-                                        <div class="col-2 col-sm-2 col-md-1 col-lg-1">
-                                            <img src="assets/img/estudio.png" class="p-0 m-0 img-fluid" width="50" height="50">
-                                        </div>
-                                    </div>
+                                    <div class="py-1"></div>
                                 </div>
                             </div>
                         </div>
@@ -574,38 +601,59 @@
         <section id="certificacion">
             <div class="container pt-2">
                 <div class="row text-center pt-5 text-white">
-                    <h1>Certificación</h1>
+                    <h1 class="titulo-bloque">Certificación</h1>
                 </div>
                 <div class="row pt-4 pb-5">
-                    <div class="col-12 col-sm-6 pb-2">
+                    <div class="col-12 col-sm-6 pb-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Certificación Básica Power BI</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Universidad de Chile, Facultad de Cs. Físicas y
-                                    Matemáticas.</h6>
-                                <p class="card-text">Diciembre 2021</p>
+                                <h5 class="card-title ps-2 pb-2 pt-2">Certificación Básica Power BI</h5>
+                                <hr class="m-0 p-0">
+                                <p class="card-subtitle text-muted ps-2 pt-3 pb-2"><i class="fa-solid fa-school"></i> &nbsp;Universidad de Chile, Facultad de Cs. Físicas y
+                                    Matemáticas.</p>
+                                <p class="card-text ps-2 texto-tiempo text-muted"><i class="fa-regular fa-calendar"></i> &nbsp;Diciembre 2021</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="row d-flex justify-content-center align-items-center text-center">
+                                    <div class="col-6">
+                                        <a class="btn boton-descargar texto-boton-descargar" type="button" id="certificado-basico">Ver Certificado</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 pb-2">
+                    <div class="col-12 col-sm-6 pb-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Certificación Intermedia Power BI</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Universidad de Chile, Facultad de Cs. Físicas y
-                                    Matemáticas.</h6>
-                                <p class="card-text">Enero 2022</p>
+                                <h5 class="card-title ps-2 pb-2 pt-2">Certificación Intermedia Power BI</h5>
+                                <hr class="m-0 p-0">
+                                <p class="card-subtitle text-muted ps-2 pt-3 pb-2"><i class="fa-solid fa-school"></i> &nbsp;Universidad de Chile, Facultad de Cs. Físicas y
+                                    Matemáticas.</p>
+                                <p class="card-text ps-2 texto-tiempo text-muted"><i class="fa-regular fa-calendar"></i> &nbsp;Enero 2022</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="row d-flex justify-content-center align-items-center text-center">
+                                    <div class="col-6">
+                                        <a class="btn boton-descargar texto-boton-descargar" type="button" id="certificado-intermedio">Ver Certificado</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <section class="d-none">
+            <iframe src="assets/file/cv-gerardo-moraga-base64.txt" id="cv-base64"></iframe>
+        </section>
+
         <!-- FIN SECCIÓN CERTIFICACIÓN -->
         <!-- SEPARADOR -->
         <hr class="separador">
         <!-- SECCIÓN DE FOOTER -->
-        <footer class="bg-dark text-center text-light py-4">
-            <p class="mb-0"><strong>Gerardo Moraga 2023 </strong> - © Todos los derechos reservados.</p>
+        <footer class="bg-dark text-center text-light py-5">
+            <p class="m-0 p-0"><strong>Gerardo Moraga 2023 </strong> - © Todos los derechos reservados.</p>
         </footer>
     </div>
 

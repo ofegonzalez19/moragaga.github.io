@@ -36,31 +36,7 @@ window.addEventListener("scroll", () => {
             element.classList.add("active");
         }
     }
-    // else if ((document.querySelector("body").offsetHeight-5) <= (window.innerHeight + window.scrollY) ){
-    //     const element = document.querySelector(".navbar-nav").lastElementChild.firstElementChild;
-    //     if (element.classList.contains("active")){
-    //         return;
-    //     }
-    //     else {
-    //         navbarLink.forEach((x)=> {
-    //             x.className = "nav-link";
-    //         });
-    //         element.classList.add("active");
-    //     }
-    // }
 });
-
-// // Función que deja activo en el navbar el item seleccionado
-// const navbarLink = document.querySelectorAll(".nav-link");
-// navbarLink.forEach((elemento) => {
-//     elemento.addEventListener("click", (e)=> {
-
-//         navbarLink.forEach((x)=> {
-//             x.className = "nav-link";
-//         });
-//         e.target.classList.add("active");
-//     })
-// });
 
 document.querySelectorAll(".footer-datos-personales .fa-brands").forEach((elemento) => {
     elemento.addEventListener("mouseenter",(e)=>{
@@ -87,3 +63,107 @@ document.querySelectorAll(".link-ver-mas").forEach((elemento) => {
     });
 });
 
+
+//Activación tooltip
+document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((tooltipTriggerEl)=> {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+// var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+// var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+//     return new bootstrap.Tooltip(tooltipTriggerEl)
+// })
+
+const certificados = {
+    "certificado-basico": {"ruta": "assets/img/DiplomaPowerBasico.jpg", "titulo": "Certificación Básica Power BI"},
+    "certificado-intermedio": {"ruta": "assets/img/DiplomaPowerBiIntermedio.jpg", "titulo": "Certificación Intermedia Power BI"},
+}
+
+// Función que muestra certificados
+document.querySelectorAll(".boton-descargar").forEach((elemento)=>{
+    elemento.addEventListener("click", (e) => {
+
+        if (certificados.hasOwnProperty(e.target.id)){
+            Swal.fire({
+                html:`<div class="container-fluid">
+                        <div class="row pt-4 text-center">
+                            <h1 class="titulo-bloque text-white">${certificados[e.target.id]["titulo"]}</h1>
+                        </div>
+                        <hr class="separador-purple">
+                        <div class="row">
+                            <img src="${certificados[e.target.id]["ruta"]}" class="img-fluid">
+                        </div>
+                    </div>`,
+                width: 1000,
+                showCloseButton: true,
+                allowOutsideClick: true,
+                showCancelButton: false,
+                showConfirmButton: false
+            })
+        }
+    })
+});
+
+//Función que descarga CV en PDF
+document.querySelector("#boton-descargar-cv").addEventListener("click", ()=>{
+
+    const bodyIframe = document.querySelector("#cv-base64").contentWindow.document.body;
+    const base64 = bodyIframe.querySelector("pre").innerHTML;
+
+    const url = convertirBase64aURL(base64);
+    descargarPDF(url);
+    //para abrir en nueva página
+    // window.open(url, "_blank");
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        html: `<div class="row pt-4 text-center">
+                    <h1 class="titulo-bloque text-white">Descargado con éxito!!</h1>
+                </div>`,
+        showConfirmButton: false,
+        timer: 2000
+    })
+});
+
+//Función que descarga una url en un PDF
+const descargarPDF = (url) => {
+    const link = document.createElement("a");
+    link.style.display = "none";
+    link.href = url;
+    link.download = "cv-gerardo-moraga.pdf";
+    link.click();
+    link.remove();
+};
+
+// Función que convierte un base64 en una URL
+const convertirBase64aURL = (base64) => {
+    const caracteresBytes = atob(base64);
+    const numeroBytes = new Array(caracteresBytes.length);
+
+    for (let x = 0; x < caracteresBytes.length; x++){
+        numeroBytes[x] = caracteresBytes.charCodeAt(x);
+    }
+
+    const arrayBytes = new Uint8Array(numeroBytes);
+
+    const blob = new Blob([arrayBytes], {
+        type: 'application/pdf'
+    });
+
+    return URL.createObjectURL(blob);
+};
+
+document.querySelector("#link-portafolio").addEventListener("click", ()=>{
+    Swal.fire({
+        icon: 'info',
+        html: `<div class="row pt-4 text-center">
+                    <h1 class="titulo-bloque text-white">'Oops...'</h1>
+                    <h4 class="text-muted">Sitio en construcción</h4>
+                </div>`,
+        showCloseButton: true,
+        allowOutsideClick: true,
+        showCancelButton: false,
+        showConfirmButton: true,
+        confirmButtonText: "Aceptar",
+        confirmButtonColor: "#7952B3"
+    })
+});

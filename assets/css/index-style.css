@@ -19,6 +19,33 @@ body {
     position: relative;
 }
 
+/* Separador de secciones  */
+.separador {
+    padding: 2px;
+    margin: 0;
+    background-color: #FFF;
+}
+
+.separador-purple {
+    padding-top: 5px;
+    background-color: var(--color-purple);
+    opacity: 1;
+}
+
+/* Estilo botón descarga de CV */
+.boton-descargar {
+    border-color: #7952B3 !important;
+    color: #7952B3 !important;
+    font-weight: 100;
+}
+
+/* Estilo botón descarga cv al pasar por encima */
+.boton-descargar:hover {
+    border: 1px solid #FFF !important;
+    background: #7952B3;
+    color: #FFF !important;
+    font-weight: 500;
+}
 
 /* Contenedor con contenido página para que se empuje bajo el navbar  */
 #contenedor-pagina {
@@ -76,9 +103,22 @@ body {
     }
 
     #educacion .fecha-estudio {
-        font-size: 12px;
+        font-size: 11px;
     }
 
+    /* Tipo de texto */
+    #certificacion .card-title {
+        font-size: 15px;
+    }
+    
+    /* Tipo de texto */
+    #certificacion .card-subtitle {
+        font-size: 13px;
+    }
+
+    #certificacion .texto-tiempo {
+        font-size: 11px !important;
+    }
 }
 
 /* Titulo de cada sección */
@@ -158,19 +198,9 @@ body {
     text-decoration: none !important;
 }
 
-/* Estilo botón descarga de CV */
-#boton-descargar-cv {
-    border-color: #7952B3 !important;
-    color: #7952B3 !important;
-    font-weight: 100;
-}
-
-/* Estilo botón descarga cv al pasar por encima */
-#boton-descargar-cv:hover {
-    border: 1px solid #FFF !important;
-    background: #7952B3;
-    color: #FFF !important;
-    font-weight: 500;
+#inicio a {
+    text-decoration: none;
+    color: var(--color-purple);
 }
 
 /*  --------------------------------------------
@@ -181,7 +211,6 @@ body {
 #experiencia {
     background: var(--color-purple);
 }
-
 
 /* Contenido con información colapsada */
 #experiencia .contenido-colapsado-experiencia {
@@ -262,12 +291,31 @@ body {
 /* Inversión a color blanco fotos */
 #educacion .footer-educacion img {
     filter: brightness(0) invert(1);
+    object-fit: contain;
 }
 
+/* Contenedor de imagen */
+#educacion .container-img {
+    width: 35px;
+    height: 35px;
+}
+
+/* zoom imagenes*/
+#educacion .img-zoom {
+    transform: scale(1.7);
+}
+
+/* zoom imagenes*/
+#educacion .img-zoom-min {
+    transform: scale(1.2);
+}
+
+/* Tipo de texto */
 #educacion .card-title {
     font-weight: 600;
 }
 
+/* Tipo de texto */
 #educacion .card-subtitle {
     font-weight: 100;
 }
@@ -283,11 +331,16 @@ body {
         font-size: 13px;
     }
 
+}
+
+/* Cambio texto por tamaño */
+@media (max-width: 1000px) {
     #educacion .fecha-estudio {
-        font-size: 13px;
+        font-size: 11px;
     }
 }
 
+/* Color divisor */
 #educacion hr {
     background-color: var(--color-purple);
 }
@@ -305,6 +358,7 @@ body {
     -webkit-border-radius: 50%; 
     border-radius: 50%;
 }
+
 .circulo p {
     float:left;
     width:100%;
@@ -316,35 +370,83 @@ body {
 }
 
 
+/*  ----------------------------------------
+    - CAMBIO DE COLOR DE TOOLTIP BOOTSTRAP -
+    ----------------------------------------
+*/ 
 
-.linea-tiempo hr {
-    color: var(--color-purple);
-    height: 3px;
+.tooltip-inner {
+    color: var(--color-purple) !important;
+    /* text-shadow: 0 0 10px#FFF; */
+    font-weight: 600;
+    font-size: 16px;
 }
 
-.linea-tiempo .collapse {
-    border: 1px solid var(--color-purple);
-    border-radius: 6px;
+/* .tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--color-purple);
 }
 
-.separador {
-    padding: 2px;
-    margin: 0;
-    background-color: #FFF;
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: var(--color-purple);
 }
 
-.row-datos-personales a {
-    text-decoration: none;
-    color: #000;
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: var(--color-purple); 
 }
 
-.row-datos-personales a:hover {
-    text-decoration: none;
-    color: var(--color-purple);
-}
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: var(--color-purple);
+} */
 
 
+/*  ----------------------------------------
+    - CAMBIO DE COLOR DE TOOLTIP BOOTSTRAP -
+    ----------------------------------------
+*/ 
+
+/*  ----------------------------------------------
+    - INICIO CONFIGURACIÓN CERTIFICACIÓN -
+    ----------------------------------------------
+*/
 
 #certificacion {
     background: var(--color-purple);
+}
+
+#certificacion .card-title {
+    font-weight: 600;
+}
+
+/* Tipo de texto */
+#certificacion .card-subtitle {
+    font-weight: 100;
+}
+
+#certificacion .texto-tiempo {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+/* Cambio texto por tamaño */
+@media (max-width: 768px) {
+    #certificacion .texto-boton-descargar {
+        font-size: 10px;
+    }
+
+    #certificacion .texto-boton-descargar:hover {
+        font-size: 9px;
+        padding-top: 7px;
+    }
+}
+
+/* Cambio texto por tamaño */
+@media (max-width: 990px) {
+    #certificacion .texto-boton-descargar {
+        font-size: 11px;
+    }
+
+    #certificacion .texto-boton-descargar:hover {
+        font-size: 10px;
+        padding-top: 7.5px;
+    }
 }
