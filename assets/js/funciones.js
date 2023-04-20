@@ -38,6 +38,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
+// Función que mueve los links de las páginas
 document.querySelectorAll(".footer-datos-personales .fa-brands").forEach((elemento) => {
     elemento.addEventListener("mouseenter",(e)=>{
         e.target.classList.add("fa-bounce");
@@ -152,18 +153,19 @@ const convertirBase64aURL = (base64) => {
     return URL.createObjectURL(blob);
 };
 
-document.querySelector("#link-portafolio").addEventListener("click", ()=>{
-    Swal.fire({
-        icon: 'info',
-        html: `<div class="row pt-4 text-center">
-                    <h1 class="titulo-bloque text-white">'Oops...'</h1>
-                    <h4 class="text-muted">Sitio en construcción</h4>
-                </div>`,
-        showCloseButton: true,
-        allowOutsideClick: true,
-        showCancelButton: false,
-        showConfirmButton: true,
-        confirmButtonText: "Aceptar",
-        confirmButtonColor: "#7952B3"
-    })
-});
+//Función que mostraba mensaje de portafolio en construcción
+// document.querySelector("#link-portafolio").addEventListener("click", ()=>{
+//     Swal.fire({
+//         icon: 'info',
+//         html: `<div class="row pt-4 text-center">
+//                     <h1 class="titulo-bloque text-white">'Oops...'</h1>
+//                     <h4 class="text-muted">Sitio en construcción</h4>
+//                 </div>`,
+//         showCloseButton: true,
+//         allowOutsideClick: true,
+//         showCancelButton: false,
+//         showConfirmButton: true,
+//         confirmButtonText: "Aceptar",
+//         confirmButtonColor: "#7952B3"
+//     })
+// });
