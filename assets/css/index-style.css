@@ -67,43 +67,39 @@ body {
         padding-top: 0 !important;
     }
 
-    /* Tamaño titulo nombre  */
-    /* #inicio .card-title {
-        font-size: 16px;
-    } */
-
-    /* #inicio .card-text{
-        font-size: 13px;
-    } */
-
-    /* Disminuy tamaño texto datos personales */
-    /* #inicio .tabla-datos-personales {
-        font-size: 11px;
-    } */
-
     /* Disminuye el tamaño de la presentación */
     #inicio .texto-presentacion {
         font-size: 14px;
     }
 
+    /* Cambio tamaño texto  */
     #experiencia .texto-cargo {
         font-size: 16px;
     }
-    
+
+    /* Cambio tamaño texto  */
     #experiencia .texto-empresa {
         font-size: 14px;
     }
 
+    /* Cambio tamaño texto  */
     #educacion .card-title {
         font-size: 15px;
     }
     
+    /* Cambio tamaño texto  */
     #educacion .card-subtitle {
         font-size: 12px;
     }
 
+    /* Cambio tamaño texto  */
     #educacion .fecha-estudio {
-        font-size: 11px;
+        font-size: 9px;
+    }
+
+    /* Cambio tamaño texto  */
+    #educacion .footer-educacion .row {
+        padding-right: .7em;
     }
 
     /* Tipo de texto */
@@ -116,6 +112,7 @@ body {
         font-size: 13px;
     }
 
+    /* Cambio tamaño texto  */
     #certificacion .texto-tiempo {
         font-size: 11px !important;
     }
@@ -357,6 +354,7 @@ body {
     -moz-border-radius: 50%; 
     -webkit-border-radius: 50%; 
     border-radius: 50%;
+    box-shadow: 0 5px 10px var(--color-purple);
 }
 
 .circulo p {
@@ -397,12 +395,6 @@ body {
 .tooltip.bs-tooltip-end .tooltip-arrow::before {
     border-right-color: var(--color-purple);
 } */
-
-
-/*  ----------------------------------------
-    - CAMBIO DE COLOR DE TOOLTIP BOOTSTRAP -
-    ----------------------------------------
-*/ 
 
 /*  ----------------------------------------------
     - INICIO CONFIGURACIÓN CERTIFICACIÓN -
