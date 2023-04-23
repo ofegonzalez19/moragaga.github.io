@@ -88,22 +88,22 @@ body {
     }
 
     /* Cambio tamaño texto  */
-    #educacion .card-title {
+    #formacion .card-title {
         font-size: 15px;
     }
     
     /* Cambio tamaño texto  */
-    #educacion .card-subtitle {
+    #formacion .card-subtitle {
         font-size: 12px;
     }
 
     /* Cambio tamaño texto  */
-    #educacion .fecha-estudio {
+    #formacion .fecha-estudio {
         font-size: 9px;
     }
 
     /* Cambio tamaño texto  */
-    #educacion .footer-educacion .row {
+    #formacion .footer-formacion .row {
         padding-right: .7em;
     }
 
@@ -281,55 +281,55 @@ body {
 */
 
 /* Color del footer */
-#educacion .footer-educacion {
+#formacion .footer-formacion {
     background-color: var(--color-purple);
 }
 
 /* Cambio de color blanco a iconos */
-#educacion .footer-educacion a {
+#formacion .footer-formacion a {
     color: white;
 }
 
 /* Inversión a color blanco fotos */
-#educacion .footer-educacion img {
+#formacion .footer-formacion img {
     filter: brightness(0) invert(1);
     object-fit: contain;
 }
 
 /* Contenedor de imagen */
-#educacion .container-img {
+#formacion .container-img {
     width: 35px;
     height: 35px;
 }
 
 /* zoom imagenes*/
-#educacion .img-zoom {
+#formacion .img-zoom {
     transform: scale(1.7);
 }
 
 /* zoom imagenes*/
-#educacion .img-zoom-min {
+#formacion .img-zoom-min {
     transform: scale(1.2);
 }
 
 /* Tipo de texto */
-#educacion .card-title {
+#formacion .card-title {
     font-weight: 600;
 }
 
 /* Tipo de texto */
-#educacion .card-subtitle {
+#formacion .card-subtitle {
     font-weight: 100;
 }
 
 /* Cambio texto por tamaño */
 @media (max-width: 768px) {
 
-    #educacion .card-title {
+    #formacion .card-title {
         font-size: 16px;
     }
     
-    #educacion .card-subtitle {
+    #formacion .card-subtitle {
         font-size: 13px;
     }
 
@@ -337,13 +337,13 @@ body {
 
 /* Cambio texto por tamaño */
 @media (max-width: 1000px) {
-    #educacion .fecha-estudio {
+    #formacion .fecha-estudio {
         font-size: 11px;
     }
 }
 
 /* Color divisor */
-#educacion hr {
+#formacion hr {
     background-color: var(--color-purple);
 }
 
