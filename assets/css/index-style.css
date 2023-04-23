@@ -1,7 +1,7 @@
 /* Variables CSS */
 :root {
     --heightNavbar: 0px;
-    --color-purple: #7952B3;
+    --color-purple: #182c91;
 }
 
 /* Modificación html para movimiento de scroll entre secciones */
@@ -39,15 +39,15 @@ body {
 
 /* Estilo botón descarga de CV */
 .boton-descargar {
-    border-color: #7952B3 !important;
-    color: #7952B3 !important;
+    border-color: #182c91 !important;
+    color: #182c91 !important;
     font-weight: 100;
 }
 
 /* Estilo botón descarga cv al pasar por encima */
 .boton-descargar:hover {
     border: 1px solid #FFF !important;
-    background: #7952B3;
+    background: #182c91;
     color: #FFF !important;
     font-weight: 500;
 }
